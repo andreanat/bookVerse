@@ -5,8 +5,8 @@ const doc = {
     title: "Library API",
     description: "API documentation for Library API"
   },
-  host: "localhost:8080",
-  schemes: ["https"]
+host: "cse341-library-api-904b.onrender.com",
+schemes: ["https"]
 };
 
 const outputFile = "./swagger.json";
