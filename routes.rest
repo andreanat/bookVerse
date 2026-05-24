@@ -1,0 +1,61 @@
+### GET all books
+GET http://localhost:8080/books
+
+### CREATE book
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "title": "Little Women",
+  "author": "Louisa May Alcott",
+  "genre": "Classic",
+  "pages": 759,
+  "publishedYear": 1868,
+  "language": "English",
+  "available": true
+}
+
+### GET all authors
+GET http://localhost:8080/authors
+
+### CREATE author
+POST http://localhost:8080/authors
+Content-Type: application/json
+
+{
+  "firstName": "Louisa",
+  "lastName": "Alcott",
+  "nationality": "American",
+  "birthYear": 1832,
+  "notableWork": "Little Women"
+}
+### UPDATE book
+PUT http://localhost:8080/books/6a123fb4fc4a7535db5ed101
+Content-Type: application/json
+
+{
+  "title": "Little Women Updated",
+  "author": "Louisa May Alcott",
+  "genre": "Classic Fiction",
+  "pages": 759,
+  "publishedYear": 1868,
+  "language": "English",
+  "available": false
+}
+
+### DELETE book
+DELETE http://localhost:8080/books/6a12430afc4a7535db5ed105
+### UPDATE author
+PUT http://localhost:8080/authors/6a123fdafc4a7535db5ed102
+Content-Type: application/json
+
+{
+  "firstName": "Louisa May",
+  "lastName": "Alcott",
+  "nationality": "American",
+  "birthYear": 1832,
+  "notableWork": "Little Women"
+}
+
+### DELETE author
+DELETE http://localhost:8080/authors/6a123fdafc4a7535db5ed102
