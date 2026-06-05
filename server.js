@@ -5,9 +5,15 @@ const swaggerFile = require("./swagger.json");
 const session = require("express-session");
 const passport = require("passport");
 const GitHubStrategy = require("passport-github2").Strategy;
+const cors = require("cors");
 
 const app = express();
 const port = process.env.PORT || 8080;
+
+app.use(cors({
+  origin: "https://cse341-library-api-904b.onrender.com",
+  credentials: true
+}));
 
 app.use(express.json());
 
