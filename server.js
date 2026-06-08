@@ -58,9 +58,9 @@ const isAuthenticated = (req, res, next) => {
 
 app.get("/", (req, res) => {
   if (req.session.user !== undefined) {
-    res.send(`Logged in as ${req.session.user.displayName}`);
+    res.send(`BookVerse API - Logged in as ${req.session.user.displayName}`);
   } else {
-    res.send("Logged out");
+    res.send("BookVerse API - Academia Juárez School Library - Logged out");
   }
 });
 
