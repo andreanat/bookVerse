@@ -114,12 +114,16 @@ app.get("/protected-test", isAuthenticated, (req, res) => {
   res.status(200).json("You have access to this protected route.");
 });
 
-mongodb.initDb((err) => {
-  if (err) {
-    console.log(err);
-  } else {
-    app.listen(port, () => {
-      console.log(`Connected to DB and listening on ${port}`);
-    });
-  }
-});
+if (process.env.NODE_ENV !== "test") {
+  mongodb.initDb((err) => {
+    if (err) {
+      console.log(err);
+    } else {
+      app.listen(port, () => {
+        console.log(`Connected to DB and listening on ${port}`);
+      });
+    }
+  });
+}
+
+module.exports = app;
