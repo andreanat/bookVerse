@@ -3,7 +3,7 @@ const swaggerAutogen = require("swagger-autogen")();
 const doc = {
   info: {
     title: "BookVerse API",
-    description: "School library API for managing books and authors at Academia Juárez"
+    description: "BookVerse API is a school library management system for Academia Juárez. It manages books, authors, students, and checkouts."
   },
   host: "cse341-library-api-904b.onrender.com",
   schemes: ["https"]

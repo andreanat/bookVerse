@@ -4,38 +4,28 @@ BookVerse is a school library management API inspired by the Academia Juárez li
 
 ## Features
 
-* Manage books
-* Manage authors
-* GitHub OAuth authentication
-* MongoDB Atlas integration
-* Swagger API documentation
-* Render deployment
+- CRUD operations for four collections
+- MongoDB Atlas database
+- GitHub OAuth authentication
+- Protected routes
+- Swagger API documentation
+- Unit testing for GET routes
+- Render deployment
 
 ## Collections
 
-### Books
+- Books
+- Authors
+- Students
+- Checkouts
 
-* title
-* author
-* genre
-* pages
-* publishedYear
-* language
-* available
+## Tech Stack
 
-### Authors
-
-* firstName
-* lastName
-* nationality
-* birthYear
-* notableWork
-
-## Technologies
-
-* Node.js
-* Express
-* MongoDB Atlas
-* Swagger UI
-* GitHub OAuth
-* Render
+- Node.js
+- Express
+- MongoDB
+- Swagger
+- Passport GitHub OAuth
+- Jest
+- Supertest
+- Render
