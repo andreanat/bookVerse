@@ -95,7 +95,8 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 app.use("/books", require("./routes/books"));
 app.use("/authors", require("./routes/authors"));
-
+app.use("/students", require("./routes/students"));
+app.use("/checkouts", require("./routes/checkouts"));
 app.get("/auth/status", (req, res) => {
   if (req.session.user !== undefined) {
     res.status(200).json({
