@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "BookVerse API",
-    "description": "School library API for managing books and authors at Academia Juárez",
+    "description": "BookVerse API is a school library management system for Academia Juárez. It manages books, authors, students, and checkouts.",
     "version": "1.0.0"
   },
   "host": "cse341-library-api-904b.onrender.com",
